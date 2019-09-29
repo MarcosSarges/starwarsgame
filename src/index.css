@@ -1,9 +1,24 @@
+@font-face {
+  font-family: 'Star Jedi Logo MonoLine';
+  src: url('./assets/fonts/StarJediLogoMonoLine.eot');
+  src: local('Star Jedi Logo MonoLine'), local('StarJediLogoMonoLine'),
+    url('./assets/fonts/StarJediLogoMonoLine.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/StarJediLogoMonoLine.woff2') format('woff2'),
+    url('./assets/fonts/StarJediLogoMonoLine.woff') format('woff'),
+    url('./assets/fonts/StarJediLogoMonoLine.ttf') format('truetype'),
+    url('./assets/fonts/StarJediLogoMonoLine.svg#StarJediLogoMonoLine') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* @import './assets/fonts/STARWARS.TTF'; */
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,6 +30,10 @@ body,
   height: 100%;
 }
 
+#root {
+  padding: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -24,4 +43,12 @@ h6,
 p,
 span {
   color: white;
+}
+
+.titlePage {
+  font-family: 'Star Jedi Logo MonoLine', sans-serif;
+  font-size: 4rem;
+  color: rgb(241, 237, 0);
+  text-align: center;
+  line-height: 1;
 }

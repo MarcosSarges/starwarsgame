@@ -6,6 +6,11 @@ import Bg from "./components/Bg";
 export default function MyRouters() {
   return (
     <BrowserRouter>
+      <h1 className="titlePage">
+        StarWars
+        <br />
+        Game
+      </h1>
       <Switch>
         <Route exact path="/start-game" component={Main} />
         <Redirect from="*" to="/start-game" />

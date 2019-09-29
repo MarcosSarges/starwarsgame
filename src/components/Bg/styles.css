@@ -1,0 +1,30 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(./../../assets/bg.png);
+  height: 100%;
+  width: 100%;
+  /* animation: pulse 5s linear infinite; */
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) perspective(10px);
+
+    filter: brightness(100%);
+  }
+
+  50% {
+    transform: scale(1.01) perspective(100px);
+    filter: brightness(200%);
+  }
+
+  100% {
+    transform: scale(1) perspective(10px);
+    filter: brightness(100%);
+  }
+}

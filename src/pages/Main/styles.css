@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+  padding: 2rem 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

@@ -51,4 +51,36 @@ span {
   color: rgb(241, 237, 0);
   text-align: center;
   line-height: 1;
+  position: relative;
+}
+
+.titlePage::after {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  background: url(./assets/img/darth-vader.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin-left: 7rem;
+  top: 0;
+  object-fit: contain;
+  height: 200px;
+  width: 200px;
+}
+
+.titlePage::before {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  background: url(./assets/img/darth-vader.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin-left: -15rem;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  object-fit: contain;
+  height: 200px;
+  width: 200px;
 }

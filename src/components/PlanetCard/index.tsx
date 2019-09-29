@@ -1,16 +1,35 @@
 import React from "react";
+import "./styles.css";
+import Hidden from "../Hidden";
 
-// import { Container } from './styles';
-
-export default function PlanetCard() {
+export default function PlanetCard(props: {
+  name: string;
+  population: string;
+  climate: string;
+  terrain: string;
+  countFilms: string | number;
+  films: string;
+}) {
   return (
-    <div>
-      <h6>Alderaan</h6>
-      <div>
-        <p>População: 2000000000</p>
-        <p>Clima: Temperate</p>
-        <p>Terreno(s): grasslands, mountains</p>
-        <p>Filmes</p>
+    <div className="planetCard">
+      <div className="header">
+        <h2>{props.name}</h2>
+      </div>
+      <div className="body">
+        <p>
+          População:
+          <Hidden txt={props.population} />
+        </p>
+        <p>
+          Clima: <Hidden txt={props.climate} />
+        </p>
+        <p>
+          Terreno(s): <Hidden txt={props.terrain} />
+        </p>
+        <p>
+          Quantidade de filmes: <Hidden txt={props.countFilms} />
+        </p>
+        {/* <p>{props.films}</p> */}
       </div>
     </div>
   );

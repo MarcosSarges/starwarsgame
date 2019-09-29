@@ -10,7 +10,12 @@ type PropsInputSearch = {
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   >;
+  secundButton?: React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  >;
   labelButton: string;
+  secundLabelButton: string;
 };
 
 export default function InputSearch(props: PropsInputSearch) {
@@ -19,6 +24,9 @@ export default function InputSearch(props: PropsInputSearch) {
       <input {...props.inputProps} />
       <button type="submit" {...props.buttonProps}>
         {props.labelButton}
+      </button>
+      <button type="button" {...props.secundButton}>
+        {props.secundLabelButton}
       </button>
     </form>
   );

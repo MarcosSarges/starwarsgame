@@ -1,4 +1,4 @@
-export interface Data {
+export interface DataPlanet {
   name: string;
   rotation_period: string;
   orbital_period: string;
@@ -15,9 +15,9 @@ export interface Data {
   url: string;
 }
 
-export interface Result {
+export interface ResultPlanet {
   count: number;
   next: string;
   previous?: any;
-  results: Data[];
+  results: DataPlanet[];
 }

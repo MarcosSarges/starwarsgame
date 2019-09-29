@@ -1,12 +1,13 @@
 import React from "react";
 import "./styles.css";
-import { sortPlanet } from "../../services/api/methods";
+import { sortPlanet, searchPlanet } from "../../services/api/methods";
 import InputSearch from "../../components/InputSearch";
 import PlanetCard from "../../components/PlanetCard";
 
 export default function Main() {
   React.useEffect(() => {
-    sortPlanet();
+    // sortPlanet();
+    searchPlanet("a");
   }, []);
 
   return (
